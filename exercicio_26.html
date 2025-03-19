@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 26</title>
+</head>
+<body>
+    <script>
+        // pede o código do produto
+        let codigo = Number(prompt("Digite o código do produto (1 a 4):"));
+        let quantidade = Number(prompt("Digite a quantidade comprada:"));
+        
+        let preco;
+
+        // define o preço com base no código do produto
+        if (codigo === 1) {
+            preco = 10.00; // produto 1 custa R$10,00
+        } else if (codigo === 2) {
+            preco = 20.00; // produto 2 custa R$20,00
+        } else if (codigo === 3) {
+            preco = 15.50; // produto 3 custa R$15,50
+        } else if (codigo === 4) {
+            preco = 5.00; // produto 4 custa R$5,00
+        } else {
+            alert("Código inválido!");
+            preco = 0; // define como 0 para evitar cálculo errado
+        }
+
+        // calcula o valor total
+        let total = preco * quantidade;
+
+        // se o código for válido, exibe o valor total
+        if (preco > 0) {
+            alert("Valor total a ser pago: R$ " + total.toFixed(2));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 9</title>
+</head>
+<body>
+
+    <script>
+        // pede para o usuário digitar o valor do depósito mensal e a taxa de juros mensal
+        let deposito = prompt("Digite o valor do depósito mensal:");
+        let juros = prompt("Digite a taxa de juros mensal (em %):");
+
+        // converte para número
+        deposito = Number(deposito);
+        juros = Number(juros) / 100; // Converte a porcentagem para decimal
+
+        // inicializa o montante
+        let montante = 0;
+
+        // calcula o montante após 12 meses - tive que pesquisar 
+        for (let i = 0; i < 12; i++) {
+            montante = (montante + deposito) * (1 + juros);
+        }
+
+        // mostra o resultado na tela
+        alert("O montante após 12 meses é: R$ " + montante.toFixed(2));
+    </script>
+
+</body>
+</html>

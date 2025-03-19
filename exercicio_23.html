@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    <script>
+        // pede para o usuário digitar um mês
+        let mes = prompt("Digite o nome de um mês:").toLowerCase(); // converte para minúsculas
+
+        let dias; // variável para armazenar a quantidade de dias
+
+        // verifica o mês e define a quantidade de dias
+        if (mes === "janeiro" || mes === "março" || mes === "maio" || mes === "julho" || 
+            mes === "agosto" || mes === "outubro" || mes === "dezembro") {
+            dias = 31;
+        } else if (mes === "abril" || mes === "junho" || mes === "setembro" || mes === "novembro") {
+            dias = 30;
+        } else if (mes === "fevereiro") {
+            dias = 28; // consideramos apenas anos não bissextos
+        } else {
+            alert("Mês inválido!"); // mensagem de erro se o usuário digitar algo errado
+        }
+
+        // se o mês for válido, exibe a quantidade de dias
+        if (dias) {
+            alert("O mês de " + mes + " tem " + dias + " dias.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+
+    <script>
+        // pede para o usuário digitar três números reais
+        let num1 = prompt("Digite o primeiro número:");
+        let num2 = prompt("Digite o segundo número:");
+        let num3 = prompt("Digite o terceiro número:");
+
+        // converte para número
+        num1 = Number(num1);
+        num2 = Number(num2);
+        num3 = Number(num3);
+
+        // calcula a média aritmética
+        let media = (num1 + num2 + num3) / 3;
+
+        // mostra o resultado na tela
+        alert("A média aritmética é: " + media.toFixed(2)); // comando para arrendondar, ex 3.14838 = 3.14
+    </script>
+
+</body>
+</html>

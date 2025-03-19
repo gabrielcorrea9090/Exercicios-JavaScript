@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+
+    <script>
+        // Pede para o usuário digitar o preço do produto e a quantidade comprada
+        let preco = prompt("Digite o preço do produto:");
+        let quantidade = prompt("Digite a quantidade comprada:");
+
+        // Converte para número
+        preco = Number(preco);
+        quantidade = Number(quantidade);
+
+        // Calcula o valor total sem desconto
+        let total = preco * quantidade;
+
+        // Aplica desconto de 10% se a quantidade for maior que 10
+        if (quantidade > 10) {
+            total = total * 0.9; // Equivalente a dar um desconto de 10%
+        }
+
+        // Mostra o resultado na tela
+        alert("O valor total a ser pago é: R$ " + total.toFixed(2));
+    </script>
+
+</body>
+</html>

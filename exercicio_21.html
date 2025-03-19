@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 21</title>
+</head>
+<body>
+    <script>
+        // pede a quantidade de pessoas no grupo
+        let quantidade = prompt("Quantas pessoas deseja informar a idade?");
+        quantidade = Number(quantidade);
+
+        let menores = 0; // Contador de menores de idade
+        let maiores = 0; // Contador de maiores de idade
+
+        // loop para pedir a idade de cada pessoa
+        for (let i = 0; i < quantidade; i++) {
+            let idade = prompt("Digite a idade da pessoa " + (i + 1) + ":");
+            idade = Number(idade);
+
+            // verifica se é menor ou maior de idade
+            if (idade < 18) {
+                menores++;
+            } else {
+                maiores++;
+            }
+        }
+
+        // exibe o resultado na tela
+        alert("Menores de idade: " + menores + "\nMaiores de idade: " + maiores);
+    </script>
+
+</body>
+</html>
+

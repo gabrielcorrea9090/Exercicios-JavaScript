@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <script>
+        // pede para o usuário digitar a idade em anos, meses e dias
+        let anos = prompt("Digite a sua idade em anos:");
+        let meses = prompt("Digite a sua idade em meses:");
+        let dias = prompt("Digite a sua idade em dias:");
+
+        // converte para número
+        anos = Number(anos);
+        meses = Number(meses);
+        dias = Number(dias);
+
+        // calcula o total de dias de vida
+        let totalDias = (anos * 365) + (meses * 30) + dias;
+
+        // exibe o resultado na tela
+        alert("Você tem " + totalDias + " dias de vida.");
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 32</title>
+</head>
+<body>
+    <script>
+        // pede a nota do aluno
+        let nota = Number(prompt("Digite a nota do aluno (0 a 10):"));
+
+        // define o conceito com base na nota
+        let conceito;
+        if (nota >= 9 && nota <= 10) {
+            conceito = "A";
+        } else if (nota >= 7 && nota < 9) {
+            conceito = "B";
+        } else if (nota >= 5 && nota < 7) {
+            conceito = "C";
+        } else if (nota >= 3 && nota < 5) {
+            conceito = "D";
+        } else {
+            conceito = "F";
+        }
+
+        // exibe o resultado
+        alert("O conceito do aluno é: " + conceito);
+    </script>
+</body>
+</html>

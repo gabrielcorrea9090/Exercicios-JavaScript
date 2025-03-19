@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 35</title>
+</head>
+<body>
+    <script>
+        // pede os três números (notas) do aluno
+        let nota1 = Number(prompt("Digite a 1° nota:"));
+        let nota2 = Number(prompt("Digite a 2° nota:"));
+        let nota3 = Number(prompt("Digite a 3° nota:"));
+
+        // calcula a média aritmética
+        let media = (nota1 + nota2 + nota3) / 3;
+
+        // exibe a média e a situação
+        let situacao;
+        if (media >= 7) {
+            situacao = "Aprovado";
+        } else {
+            situacao = "Reprovado";
+        }
+
+        alert("Média: " + media.toFixed(2) + "\nSituação: " + situacao);
+    </script>
+</body>
+</html>

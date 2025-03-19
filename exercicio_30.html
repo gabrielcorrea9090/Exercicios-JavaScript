@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 30</title>
+</head>
+<body>
+    <script>
+        // pede a quantidade de maçãs compradas
+        let quantidade = Number(prompt("Digite o número de maçãs compradas: "));
+
+        // define o preço com base na quantidade
+        let preco;
+        if (quantidade < 12) {
+            preco = 0.50;
+        } else {
+            preco = 0.40;
+        }
+
+        // calcula o valor total
+        let total = quantidade * preco;
+
+        // exibe o resultado
+        alert("Valor total a ser pago: R$ " + total.toFixed(2));
+    </script>
+
+</body>
+</html>

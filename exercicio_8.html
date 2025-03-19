@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <script>
+        // Pede para o usuário digitar dois números inteiros
+        let num1 = prompt("Digite o primeiro número:");
+        let num2 = prompt("Digite o segundo número:");
+
+        // Converte para número
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        // Troca os valores usando uma variável temporária
+        let temp = num1;
+        num1 = num2;
+        num2 = temp;
+
+        // Mostra o resultado na tela
+        alert("Agora, o primeiro número é: " + num1 + "\nE o segundo número é: " + num2);
+    </script>
+</body>

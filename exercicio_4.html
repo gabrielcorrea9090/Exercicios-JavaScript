@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+
+    <script>
+        // Pede para o usuário digitar as três notas
+        let nota1 = prompt("Digite a primeira nota (peso 2):");
+        let nota2 = prompt("Digite a segunda nota (peso 3):");
+        let nota3 = prompt("Digite a terceira nota (peso 5):");
+
+        // Converte para número
+        nota1 = Number(nota1);
+        nota2 = Number(nota2);
+        nota3 = Number(nota3);
+
+        // Calcula a média ponderada
+        let media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / (2 + 3 + 5);
+
+        // Mostra o resultado na tela
+        alert("A média ponderada é: " + media);
+    </script>
+
+</body>
+</html>

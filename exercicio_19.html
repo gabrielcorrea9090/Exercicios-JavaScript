@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 19</title>
+</head>
+<body>
+    <script>
+        // pede para o usuário digitar as três notas
+        let nota1 = prompt("Digite a primeira nota:");
+        let nota2 = prompt("Digite a segunda nota:");
+        let nota3 = prompt("Digite a terceira nota:");
+
+        // converte as notas para número
+        nota1 = Number(nota1);
+        nota2 = Number(nota2);
+        nota3 = Number(nota3);
+
+        // calcula a média das notas
+        let media = (nota1 + nota2 + nota3) / 3;
+
+        // verifica se o aluno foi aprovado ou reprovado
+        if (media >= 7) {
+            alert("Você foi aprovado com a média: " + media.toFixed(2)); // aredonda
+        } else {
+            alert("Você foi reprovado com a média: " + media.toFixed(2)); // aredonda
+        }
+    </script>
+</body>
+</html>

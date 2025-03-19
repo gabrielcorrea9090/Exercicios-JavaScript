@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 27</title>
+</head>
+<body>
+    <script>
+        // pede a idade e o sexo da pessoa
+        let idade = Number(prompt("Digite sua idade:"));
+        let sexo = prompt("Digite seu sexo (M para masculino, F para feminino):").toUpperCase(); // converte para maiúsculo
+
+        // verifica se pode se aposentar
+        if ((sexo === "M" && idade >= 65) || (sexo === "F" && idade >= 60)) {
+            alert("Você pode se aposentar!");
+        } else {
+            alert("Você ainda não pode se aposentar.");
+        }
+    </script>
+</body>
+</html>

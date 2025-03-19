@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22</title>
+</head>
+<body>
+    <script>
+        // Pede o salário do funcionário
+        let salario = prompt("Digite o salário do funcionário:");
+        salario = Number(salario); // Converte para número
+
+        let bonus; // Variável para armazenar o valor do bônus
+
+        // Verifica qual percentual aplicar
+        if (salario > 2000) {
+            bonus = salario * 0.10; // 10% de bônus
+        } else {
+            bonus = salario * 0.05; // 5% de bônus
+        }
+
+        // Exibe o valor do bônus
+        alert("O bônus do funcionário é: R$ " + bonus.toFixed(2)); // acressenta duas casas decimais ex $50 --> $50.00
+    </script>
+</body>
+</html>

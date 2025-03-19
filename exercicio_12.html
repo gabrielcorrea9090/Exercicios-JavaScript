@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+
+    <script>
+        // pede para o usuário digitar o peso e a altura
+        let peso = prompt("Digite o seu peso em kg:");
+        let altura = prompt("Digite a sua altura em metros:");
+
+        // converte para número
+        peso = Number(peso);
+        altura = Number(altura);
+
+        // calcula o IMC
+        let imc = peso / (altura * altura); // o calculo é altura ao quadrado 
+
+        // exibe o resultado na tela
+        alert("Seu IMC é: " + imc.toFixed(2)); // arredonda 
+    </script>
+
+</body>
+</html>

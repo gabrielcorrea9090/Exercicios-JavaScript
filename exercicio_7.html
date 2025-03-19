@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+
+    <script>
+        // pede para o usuário digitar o salário base
+        let salarioBase = prompt("Digite o salário base do funcionário:");
+
+        // converte para número
+        salarioBase = Number(salarioBase);
+
+        // calcula o salário líquido com 5% de comissão
+        let salarioLiquido = salarioBase * 1.05; // Equivalente a somar 5%
+
+        // mostra o resultado na tela
+        alert("O salário líquido é: R$ " + salarioLiquido.toFixed(2));
+    </script>
+
+</body>
+</html>

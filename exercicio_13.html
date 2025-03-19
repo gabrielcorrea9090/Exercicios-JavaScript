@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 13</title>
+</head>
+<body>
+
+    <script>
+        // pede para o usuário digitar dois números inteiros
+        let num1 = prompt("Digite o primeiro número:");
+        let num2 = prompt("Digite o segundo número:");
+
+        // converte para número
+        num1 = Number(num1);
+        num2 = Number(num2);
+
+        // verifica se o primeiro número é múltiplo do segundo
+        if (num1 % num2 === 0) {
+            alert(num1 + " é múltiplo de " + num2);
+        } else {
+            alert(num1 + " não é múltiplo de " + num2);
+        }
+    </script>
+
+</body>
+</html>
